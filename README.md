@@ -1,36 +1,132 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌍 Student Carbon Footprint Calculator
+
+An **activity-based carbon footprint calculator** designed for **urban university students in Bangladesh**.
+The app estimates a student’s **annual carbon footprint (kg CO₂e/year)** based on daily activities such as transport, diet, electricity use, and digital device usage.
+
+---
+
+## Features
+
+* 🚍 **Transport footprint**
+
+  * Walking, rickshaw, CNG, bus, shuttle, car
+  * Distance and commute frequency considered
+
+* 🍽️ **Food & diet footprint**
+
+  * Beef, chicken, fish, eggs, and dairy consumption
+  * Weekly servings converted to annual emissions
+
+* 🏠 **Accommodation energy**
+
+  * Monthly electricity bill
+  * Shared accommodation adjustment
+  * Bangladesh grid emission factor
+
+* 💻 **Digital activity**
+
+  * Smartphone usage (hours/day)
+  * Laptop/PC usage (hours/day)
+
+* 📊 **Final result display**
+
+  * Annual carbon footprint (kg CO₂e/year)
+  * Smooth in-page result reveal
+  * Restart option
+
+---
+
+## Methodology
+
+This calculator follows an **activity-based approach**, using emission factors and assumptions aligned with academic literature and a Python reference model.
+
+### Emission Factors (examples)
+
+| Category              | Factor               |
+| --------------------- | -------------------- |
+| Car                   | 0.192 kg CO₂e / km   |
+| Bus                   | 0.089 kg CO₂e / km   |
+| Electricity (BD grid) | 0.63 kg CO₂e / kWh   |
+| Beef                  | 27.0 kg CO₂e / kg    |
+| Digital usage         | 0.035 kg CO₂e / hour |
+
+Serving sizes and annualization are handled internally to produce yearly estimates.
+
+---
+
+## Tech Stack
+
+* **Next.js (App Router)**
+* **React (Client Components)**
+* **Tailwind CSS**
+* JavaScript (ES6)
+
+---
+
+##  How It Works
+
+1. The user answers a series of questions.
+2. Each question collects activity data.
+3. Emission factors are applied to calculate CO₂e.
+4. The total annual footprint is displayed on completion.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Open in browser
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔄 Restarting the Calculator
 
-To learn more about Next.js, take a look at the following resources:
+After viewing results, users can restart the calculator and enter new data without refreshing the page.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📚 Intended Use
 
-## Deploy on Vercel
+* University sustainability projects
+* Environmental awareness campaigns
+* Academic research & student surveys
+* Educational demonstrations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚠️ Disclaimer
+
+This tool provides **estimates**, not exact measurements.
+Actual emissions may vary depending on lifestyle, technology efficiency, and regional differences.
+
+---
+
+## 🌱 Future Improvements
+
+* Category-wise emission breakdown (pie charts)
+* Daily footprint display (kg CO₂e/day)
+* Backend integration (FastAPI / Python)
+* Data export (CSV / PDF)
+* User comparisons and recommendations
+
+---
+
+## 👤 Author
+
+Developed as part of an **academic carbon footprint assessment project**
+focused on **urban university students in Bangladesh**.
