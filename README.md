@@ -3,6 +3,12 @@
 An **activity-based carbon footprint calculator** designed for **urban university students in Bangladesh**.
 The app estimates a student’s **annual carbon footprint (kg CO₂e/year)** based on daily activities such as transport, diet, electricity use, and digital device usage.
 
+
+## Deployment Link
+
+<a href="https://carbon-footprint-calculator-cyan.vercel.app/"><img src="public/logo.svg" alt="Boolean Simplify Logo" width="25"/></a> [Click here to visit the deployed application](https://carbon-footprint-calculator-cyan.vercel.app/)
+
+
 ---
 
 ## Features
